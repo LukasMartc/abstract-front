@@ -190,7 +190,7 @@ h1 {
 
     .container-button {
         position: absolute;
-        top: 79px;
+        top: 85px;
         right: 0;
         left: 0;
         flex-direction: column;
@@ -203,6 +203,24 @@ h1 {
 
     .container-button li {
          padding: 16px 0;
+    }
+
+    .submit,
+    .sign-in {
+        font-size: 24px;
+        border: none;
+        transition: 0.3s ease all;
+        background-color: transparent;
+    }
+
+    .line-responsive {
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+    .submit:hover,
+    .sign-in:hover {
+        color: #d4d4d4;
+        background-color: transparent;
     }
 
     .menu-icon {
