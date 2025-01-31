@@ -244,6 +244,103 @@ main {
     text-decoration: underline;
 }
 
+footer {
+    background-color: #000;
+    padding: 0 30px 60px;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 0.5fr;
+    column-gap: 50px;
+    justify-items: start;
+    padding-bottom: 100px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.content-footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.content-footer a:hover {
+    text-decoration: underline;
+}
+.content-footer h5 {
+    margin: 48px 0 16px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content-footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-footer div h6 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.copyright .container-logo {
+    margin-bottom: 20px;
+}
+
+.copyright p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.floating-button {
+    border: 1px solid transparent;
+    display: flex;
+    background-color: #4C5FD5;
+    padding: 13px 22px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 99;
+}
+
+.bx-question-mark {
+    font-size: 15px;
+}
+
+.floating-button div {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 1200px) {
     nav {
         padding: 15px
@@ -295,6 +392,12 @@ main {
     h1 {
         font-size: 70px
     }
+
+    .container-footer {
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 0px;
+        width: 100%;
+    }
 }
 
 @media (max-width: 769px) {
@@ -326,4 +429,21 @@ main {
     .wrapper {
         grid-template-columns: 1fr; /* Una sola columna */
     }
+
+    .container-footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 0;
+    }
+
+    .copyright {
+        position: static;
+        bottom: 0px;
+        right: 0;
+    }
+
+    .copyright .container-logo {
+        margin-top: 40px;
+    }
 }
+
+
